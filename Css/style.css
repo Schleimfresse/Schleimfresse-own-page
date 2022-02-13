@@ -338,6 +338,7 @@ footer {
   border-radius: 20px;
   background-color: var(--header-hex);
   width: 45vw;
+  padding: 1vh 0 1vh 0;
 }
 .info-text {
   color: var(--gold-hex);
