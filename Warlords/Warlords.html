@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Schleimfresse | Warlords pack</title>
     <link rel="icon" href="../img/R1.png" />
     <script src="../js/script.js"></script>
@@ -14,7 +14,7 @@
       <div class="center" id="menu">
         <ion-icon size="large" name="menu-outline"></ion-icon>
       </div>
-      <div id="link-box-wrapper">
+      <div class="link-box-wrapper desktop">
         <div class="link-box">
           <a target="_blank" href="Warlords/Warlords.html"
             >Warlords Texture pack</a
@@ -35,10 +35,12 @@
           >
         </div>
       </div>
-      <a href="../index.html"><h1><span id="namecolor">Schleimfresse</span> - Warlords</h1></a>
-      <div id="right"></div>
-      <a id="back" onclick="disable()" href="#"
-          ><ion-icon id="button-icon" name="chevron-back-outline"></ion-icon
+      <h1 class="center">
+        <span id="namecolor">Schleimfresse </span><span>- Main page</span>
+      </h1>
+      <div id="right">
+        <a id="back" onclick="disable()" href="#"
+          ><ion-icon id="button-icon" size="normal" name="chevron-back-outline"></ion-icon
         ></a>
         <div
           data-tippy-content="Copied"
@@ -66,6 +68,27 @@
       </div>
     </header>
     <main id="wl-main">
+      <div class="link-box-wrapper" id="mobile">
+        <div class="link-box">
+          <a target="_blank" href="Warlords/Warlords.html"
+            >Warlords Texture pack</a
+          >
+        </div>
+        <div class="link-box">
+          <a
+            target="_blank"
+            href="https://hypixel.net/threads/guide-how-to-help-translate-hypixel.800941/"
+            >Hypixel translation project</a
+          >
+        </div>
+        <div class="link-box">
+          <a
+            target="_blank"
+            href="https://hypixel.net/members/schleimfresse.4175363/"
+            >My Hypixel Forum Profile</a
+          >
+        </div>
+      </div>
       <div id="wl-link-box" class="link-box">
         <a id="wl-link" href="legacy_WarlordsMar4zip.zip"
           >Warlords Recource Pack Download</a
