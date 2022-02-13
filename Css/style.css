@@ -327,6 +327,7 @@ footer {
   display: flex;
   align-items: start;
   flex-direction: column;
+  z-index: 21;
 }
 #crowdin-inner-wrapper {
   display: grid;
