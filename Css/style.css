@@ -337,7 +337,6 @@ footer {
   grid-template-rows: 1fr 1fr;
   border-radius: 20px;
   background-color: var(--header-hex);
-  height: 90vh;
   width: 45vw;
 }
 .info-text {
