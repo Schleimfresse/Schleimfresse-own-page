@@ -139,7 +139,7 @@ h1 {
 .link-box:hover {
   background-color: var(--§0);
 }
-#link-box-wrapper {
+.link-box-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -148,7 +148,7 @@ h1 {
   gap: 5px;
   height: 100%;
 }
-#link-box-wrapper,
+.link-box-wrapper,
 #right {
   flex: 1;
 }
@@ -366,13 +366,21 @@ footer {
 }
 #menu {
   visibility: hidden;
-  position: absolute;
+  position: relative;
   cursor: pointer;
+  justify-content: flex-start;
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mobile {
+  visibility: hidden;
+  display: none;
+}
+.desktop {
+  visibility: visible;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -385,13 +393,6 @@ footer {
   #menu {
     visibility: visible;
   }
-  #link-box-wrapper {
-    left: -20rem;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: relative;
-    top: 20vh;
-  }
   section {
     flex-direction: column;
   }
@@ -401,18 +402,20 @@ footer {
   }
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
     width: 100vw;
+    align-content: center;
   }
   h1 {
-    font-size: 2vw;
+    font-size: 1em;
   }
   .link-box {
     font-size: 1em;
+    width: 60vw;
   }
-  #link-box-wrapper,
+  .link-box-wrapper,
   #right {
-    flex: none;
+    overflow: hidden;
   }
   #crowdin-inner-wrapper {
     width: 90vw;
@@ -420,9 +423,32 @@ footer {
     grid-template-columns: none;
     gap: 10px;
     overflow-y: scroll;
-    padding: 1vh 0 1vh 0;
+    padding: 1vh 1vh 1vh 1vh;
   }
   .mini-card-wrapper {
     width: 90%;
+    padding: 2vw;
+  }
+  #rickrollgif {
+    width: 90vw;
+  }
+  #mobile {
+    visibility: visible;
+    left: -100vw;
+    top: 15vh;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    height: auto;
+  }
+  .desktop {
+    visibility: hidden;
+    display: none;
+  }
+  #back{
+    height: 1em;
+    width: 1em;
   }
 }
