@@ -40,6 +40,10 @@ function copyToClipboard(element) {
 
 menu = document.getElementById("menu");
 
+box1 = document.getElementById("card-wrapper");
+box2 = document.getElementById("crowdin");
+box3 = document.getElementById("card-wrapper2");
+
 function crowdinproject(name) {
   window.open(`https://crowdin.com/project/${name}`, "_blank");
 }
@@ -51,14 +55,27 @@ menu.addEventListener("click", function () {
     hide();
   }
 });
-
+box1.addEventListener("click", function () {
+  if (menustatus == true) {
+    hide();
+  }
+});
+box2.addEventListener("click", function () {
+  if (menustatus == true) {
+    hide();
+  }
+});
+box3.addEventListener("click", function () {
+  if (menustatus == true) {
+    hide();
+  }
+});
 function show(box) {
-  document.getElementById("link-box-wrapper").style.left = 2+'rem';
-  menu.classList.add("active");
+  document.getElementById("mobile").style.left = 0;
   menustatus = true;
 }
 function hide() {
-  box = document.getElementById("link-box-wrapper").style.left = -20+'rem';
-  menu.classList.remove("active");
+  box = document.getElementById("mobile").style.left = -100 + "vw";
   menustatus = false;
 }
+
