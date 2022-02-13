@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#1e1e1e" />
+    <meta name="author" content="Schleimfresse" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Schleimfresse | Main page</title>
     <link rel="stylesheet" href="../Css/style.css" />
-    <title>Schleimfresse | Warlords pack</title>
     <link rel="icon" href="../img/R1.png" />
-    <script src="../js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body id="wl-body">
     <header>
@@ -36,7 +52,7 @@
         </div>
       </div>
       <h1 class="center">
-        <span id="namecolor">Schleimfresse </span><span>- Main page</span>
+        <span id="namecolor">Schleimfresse </span><span>- Warlords</span>
       </h1>
       <div id="right">
         <a id="back" onclick="disable()" href="#"
@@ -95,5 +111,17 @@
         >
       </div>
     </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      tippy("#discordbutton", {
+        trigger: "click",
+        duration: "500",
+        theme: "material",
+      });
+    </script>
   </body>
 </html>
+
