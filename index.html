@@ -56,12 +56,16 @@
           >
         </div>
       </div>
-      <h1 class="center">
+      <h1 class="center" style="gap: 5px;">
         <span id="namecolor">Schleimfresse </span><span>- Main page</span>
       </h1>
       <div id="right">
         <a id="back" onclick="disable()" href="#"
-          ><ion-icon id="button-icon" size="normal" name="chevron-back-outline"></ion-icon
+          ><ion-icon
+            id="button-icon"
+            size="normal"
+            name="chevron-back-outline"
+          ></ion-icon
         ></a>
         <div
           data-tippy-content="Copied"
@@ -113,7 +117,7 @@
       <section id="card-wrapper">
         <div class="card2">
           <a class="center" href="#Crowdin-projects"
-            ><div id="onscroll" class="card2">
+            ><div class="card2 moveleft">
               Scroll down
               <ion-icon
                 class="icon-main"
@@ -122,11 +126,11 @@
           ></a>
         </div>
         <div class="card1">
-          <!--<picture class="center">
-          <source media="(max-width: 480px)" id="slime-img" alt="Slime-img" srcset="img/Slime-mobile.png">
-          <source media="(min-width: 500px)" id="slime-img" alt="Slime-img" srcset="img/Slime.png">
+          <picture class="center">
+          <source media="(max-width: 700px)"alt="Slime-img" srcset="img/Slime-mobile.png">
+          <source media="(min-width: 700px)"alt="Slime-img" srcset="img/Slime.png">
           <img src="img/Slime.png" id="slime-img" alt="slime-img">
-      </picture>-->
+      </picture>
         </div>
         <div class="custom-shape-divider-bottom-1640797655">
           <svg
@@ -167,7 +171,7 @@
             ></path>
           </svg>
         </div>
-        <div id="Crowdin-projects" class="card2">
+        <div id="Crowdin-projects" class="card2 moveleft">
           Crowdin-<i
             style="font-size: inherit; color: inherit; font-weight: inherit"
             >projects</i
@@ -286,7 +290,7 @@
           </svg>
         </div>
         <a href="#sus" onclick="rickroll()"
-          ><div class="card2 onscroll">
+          ><div class="card2 moveleft">
             Press<ion-icon
               class="icon-main"
               name="chevron-forward-outline"
@@ -306,10 +310,13 @@
             <span id="discordtext">Schleimfresse#7015</span>
           </svg>
           <footer>
-            This site consists of
-            <ion-icon size="large" name="logo-html5"></ion-icon>
-            <ion-icon size="large" name="logo-css3"></ion-icon>
-            <ion-icon size="large" name="logo-javascript"></ion-icon>
+            <span class="center">
+              This site consists of
+              <ion-icon size="large" name="logo-html5"></ion-icon>
+              <ion-icon size="large" name="logo-css3"></ion-icon>
+              <ion-icon size="large" name="logo-javascript"></ion-icon
+            ></span>
+            <span>Built with slimy 💚 of Schleimfresse</span>
           </footer>
         </div>
       </section>
