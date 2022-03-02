@@ -328,6 +328,14 @@ h1 {
 #back:hover {
   background-color: var(--§0);
 }
+  #crowdin-inner-wrapper {
+    width: 90vw;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: none;
+    gap: 10px;
+    overflow-y: scroll;
+    padding: 1vh 1vh 1vh 1vh;
+  }
 #footer {
   left: 0vw;
   bottom: 5vh;
