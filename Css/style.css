@@ -512,7 +512,7 @@ footer {
   #right {
     overflow: hidden;
   }
-  #crowdin-inner-wrapper {
+  .inner-wrapper {
     width: 90vw;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: none;
