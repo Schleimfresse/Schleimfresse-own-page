@@ -519,6 +519,7 @@ footer {
     gap: 10px;
     overflow-y: scroll;
     padding: 1vh 1vh 1vh 1vh;
+    height: 100vh;
   }
   .mini-card-wrapper {
     width: 90%;
