@@ -46,22 +46,7 @@ menu.addEventListener("click", function () {
     hide();
   }
 });
-box1.addEventListener("click", function () {
-  if (menustatus == true) {
-    hide();
-  }
-});
-box2.addEventListener("click", function () {
-  if (menustatus == true) {
-    hide();
-  }
-});
-box3.addEventListener("click", function () {
-  if (menustatus == true) {
-    hide();
-  }
-});
-function show(box) {
+function show() {
   document.getElementById("mobile").style.left = 0;
   menustatus = true;
 }
